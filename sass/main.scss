@@ -1,0 +1,88 @@
+@import "includes";
+@import "index";
+@import "test";
+
+.toggle-btn {
+  position: fixed;
+  margin: 1rem;
+  padding: 1rem;
+  width: 40px;
+  height: 12px;
+  right: 2rem;
+  z-index: 3;
+  cursor: pointer;
+}
+span.one {
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: #000;
+}
+span.two {
+  position: absolute;
+  width: 34px;
+  height: 2px;
+  background: #000;
+  margin-top: 10px;
+}
+span.three {
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: #000;
+  margin-top: 20px;
+}
+.nav-menu {
+  z-index: 2;
+  position: fixed;
+  background: #10121f;
+  height: 100vh;
+  width: 100%;
+  top: -100%;
+  right: 0;
+}
+.data {
+  padding: 6rem 0 0 2rem;
+  position: relative;
+  ul {
+    list-style: none;
+    li:first-child {
+      color: #11fe00;
+    }
+    li:not(:first-child) {
+      color: #fff;
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 42px;
+      }
+    }
+  }
+}
+
+.main-header {
+  height: 80vh;
+  text-align: left;
+}
+
+.header-1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  padding: 5% 0 0 2%;
+  @media (max-width: 560px) {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (max-width: 765px) {
+  #main-header {
+    background: url("../img/small-main-header-bg.png") center/cover;
+    height: 60vh;
+  }
+}
